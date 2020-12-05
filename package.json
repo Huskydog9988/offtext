@@ -1,6 +1,6 @@
 {
   "name": "offtext",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "",
   "main": "src/index.ts",
   "bin": {
@@ -9,10 +9,11 @@
   "scripts": {
     "cm": "cz",
     "prepublishOnly": "npm run build",
-    "prebuild": "npm run lint",
+    "prebuild": "npm run lint && npm run test",
     "build": "npm run compile",
     "dev": "tsc -w",
-    "lint": "eslint src/**",
+    "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
+    "lint": "eslint --fix src/**/* test/**/*",
     "compile": "tsc",
     "compress": "uglifyjs dist/index.js dist/utils/chars.js dist/utils/genBizarre.js dist/utils/isASCII.js -o dist/index.js -c -m"
   },
@@ -20,16 +21,23 @@
     "commander": "^6.2.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
     "@types/node": "^14.14.10",
     "@types/uglify-js": "^3.11.1",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
+    "chai": "^4.2.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.2.0",
     "husky": "^4.3.4",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
     "prettier": "^2.2.1",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^9.1.0",
     "typescript": "^4.1.2",
     "uglify-js": "^3.12.1"
   },
@@ -46,9 +54,30 @@
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
+  "nyc": {
+    "all": true,
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": ">=12.x.x",
+    "yarn": "^1.12"
   }
 }

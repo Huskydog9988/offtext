@@ -1,6 +1,6 @@
 import chars from './chars'
 
-export default (str: string): void => {
+export default (str: string): string => {
   let product = ''
   for (const rawChar of str) {
     const char = rawChar.toLowerCase()
@@ -16,5 +16,5 @@ export default (str: string): void => {
     }
   }
 
-  console.log(product)
+  return product
 }

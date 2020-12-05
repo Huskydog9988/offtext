@@ -23,7 +23,7 @@ program
       console.error("Text isn't ASCII")
       process.exit(1)
     }
-    genBizarre(text)
+    console.log(genBizarre(text))
   })
 
 program.parse(process.argv)
