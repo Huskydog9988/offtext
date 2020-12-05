@@ -1,10 +1,10 @@
 {
   "name": "offtext",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
   "bin": {
-    "offtext": "dist/cli.js"
+    "offtext": "dist/src/cli.js"
   },
   "scripts": {
     "cm": "cz",
