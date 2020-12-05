@@ -7,8 +7,9 @@ describe('genBizarre', () => {
     const result = genBizarre('tEst cASe')
     expect(result).to.be.a('string')
   })
-  it('should have a length of 12', () => {
+  it('should have a length of at least 9', () => {
     const result = genBizarre('tEst cASe')
-    expect(result.length).to.be.greaterThan(9)
+    // Needs to be 1 less than required length
+    expect(result.length).to.be.greaterThan(8)
   })
 })
