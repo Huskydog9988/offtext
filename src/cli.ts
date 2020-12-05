@@ -8,7 +8,7 @@ import isASCII from './utils/isASCII'
 const program = new Command()
 
 program
-  .version('v0.1.0', '-v, --version')
+  .version('v0.2.0', '-v, --version')
   .description('Makes your ascii text look bizarre')
   .option('-d, --debug', 'extra output for debugging')
 
