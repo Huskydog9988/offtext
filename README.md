@@ -1,6 +1,6 @@
 # offtext
 
-Convert your ASCII strings into weird unicode strings
+Convert your ASCII into weird unicode strings
 
 ## 🏃‍♀️ Usage
 
