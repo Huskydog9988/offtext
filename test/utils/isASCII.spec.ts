@@ -3,6 +3,10 @@ import { expect } from 'chai'
 import 'mocha'
 
 describe('isASCII', () => {
+  it('should be a string', () => {
+    const result = isASCII('tEst cASe')
+    expect(result).to.be.a('boolean')
+  })
   it('should return true', () => {
     const result = isASCII('tEst cASe')
     expect(result).to.equal(true)
