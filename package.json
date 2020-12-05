@@ -1,0 +1,36 @@
+{
+  "name": "offtext",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.ts",
+  "bin": {
+    "offtext": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "npm run compile",
+    "dev": "tsc -w",
+    "compile": "tsc",
+    "compress": "uglifyjs dist/index.js dist/utils/chars.js dist/utils/genBizarre.js dist/utils/isASCII.js -o dist/index.js -c -m"
+  },
+  "dependencies": {
+    "commander": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@types/uglify-js": "^3.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2",
+    "uglify-js": "^3.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Huskydog9988/offtext.git"
+  },
+  "author": "Huskydog9988 (https://github.com/Huskydog9988)",
+  "license": "MIT"
+}

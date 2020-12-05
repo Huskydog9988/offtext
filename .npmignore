@@ -81,7 +81,9 @@ typings/
 # Nuxt.js build / generate output
 .nuxt
 build
-dist
+
+# Ignore Source Files
+src
 
 # Gatsby files
 .cache/
@@ -107,3 +109,10 @@ dist
 # Ignore Lock files
 yarn.lock
 package-lock.json
+
+# Ignore Dev dep config files
+.eslintignore
+.eslintc.js
+.prettierignore
+.prettierrc
+tsconfig.json
