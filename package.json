@@ -20,6 +20,7 @@
     "@types/uglify-js": "^3.11.1",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.2.0",
@@ -32,5 +33,10 @@
     "url": "https://github.com/Huskydog9988/offtext.git"
   },
   "author": "Huskydog9988 (https://github.com/Huskydog9988)",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
