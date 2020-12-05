@@ -18,7 +18,8 @@
     "compress": "uglifyjs dist/index.js dist/utils/chars.js dist/utils/genBizarre.js dist/utils/isASCII.js -o dist/index.js -c -m"
   },
   "dependencies": {
-    "commander": "^6.2.0"
+    "commander": "^6.2.0",
+    "tslib": "^2.0.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.14",
