@@ -112,7 +112,9 @@ package-lock.json
 
 # Ignore Dev dep config files
 .eslintignore
-.eslintc.js
+.eslintrc.js
 .prettierignore
 .prettierrc
 tsconfig.json
+.czrc
+.editorconfig
