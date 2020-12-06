@@ -1,10 +1,15 @@
-# offtext
+# Offtext
 
-![Package](https://github.com/Huskydog9988/offtext/workflows/Package/badge.svg)[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)[![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
+[![Package](https://github.com/Huskydog9988/offtext/workflows/Package/badge.svg)](https://github.com/Huskydog9988/offtext/actions)
+[![current version](https://img.shields.io/npm/v/offtext.svg?style=flat-square)](https://www.npmjs.com/package/offtext)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
 
 > Convert your ASCII into weird Unicode strings
 
-offtext converts your traditional text into incongruous text, straight out of a seizure.
+Offtext converts your traditional text into incongruous text, straight out of a seizure.
 
 ## 🏃‍♀️ Usage
 
@@ -36,7 +41,7 @@ console.log(offtext.genBizarre(text))
 
 ## 📥 Install and Run
 
-You can also install offtext as a global cli
+You can also install Offtext as a global cli
 
 ```bash
 npm install -g offtext
