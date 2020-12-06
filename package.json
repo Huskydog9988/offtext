@@ -1,6 +1,6 @@
 {
   "name": "offtext",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Convert your ASCII into weird Unicode strings",
   "main": "dist/src/index.js",
   "bin": {
@@ -14,7 +14,7 @@
     "dev": "tsc -w",
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
     "lint": "eslint --fix src/**/* test/**/*",
-    "compile": "tsc",
+    "compile": "tsc --listEmittedFiles",
     "compress": "uglifyjs dist/index.js dist/utils/chars.js dist/utils/genBizarre.js dist/utils/isASCII.js -o dist/index.js -c -m"
   },
   "dependencies": {
