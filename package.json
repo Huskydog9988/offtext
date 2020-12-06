@@ -1,7 +1,7 @@
 {
   "name": "offtext",
-  "version": "0.3.1",
-  "description": "",
+  "version": "0.3.2",
+  "description": "Convert your ASCII into weird Unicode strings",
   "main": "dist/src/index.js",
   "bin": {
     "offtext": "dist/src/cli.js"
