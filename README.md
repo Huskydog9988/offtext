@@ -46,5 +46,3 @@ offtext gen <your text here>
 ## 📝 Notes
 
 - The generate command is the default command meaning it can be used like: `offtext <your text here>`
-
-- You can also used the exposed api in your projects:
