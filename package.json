@@ -8,14 +8,15 @@
   },
   "scripts": {
     "cm": "cz",
-    "prepublishOnly": "npm run build",
-    "prebuild": "npm run lint && npm run test",
-    "build": "npm run compile",
+    "prepublishOnly": "yarn build",
+    "prebuild": "yarn lint && yarn test",
+    "build": "yarn compile",
+    "postbuild": "yarn compress",
     "dev": "tsc -w",
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
     "lint": "eslint --fix src/**/* test/**/*",
     "compile": "tsc",
-    "compress": "uglifyjs dist/index.js dist/utils/chars.js dist/utils/genBizarre.js dist/utils/isASCII.js -o dist/index.js -c -m"
+    "compress": "uglifyjs dist/src/utils/chars.js -o dist/src/utils/chars.js -c -m --source-map"
   },
   "dependencies": {
     "commander": "^6.2.0",
