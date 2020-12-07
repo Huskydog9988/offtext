@@ -108,6 +108,7 @@ export const e = [
   '𝔼',
   'ꏂ',
   'ꈼ',
+  '3',
 ]
 
 export const f = [
@@ -412,6 +413,7 @@ export const s = [
   '₴',
   'ꇙ',
   'ꌚ',
+  '$',
 ]
 
 export const t = [
