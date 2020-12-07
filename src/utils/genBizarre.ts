@@ -1,4 +1,5 @@
 import chars from './chars'
+import getRandom from './getRandom'
 
 export default (str: string): string => {
   let product = ''
@@ -6,10 +7,7 @@ export default (str: string): string => {
     const char = rawChar.toLowerCase()
 
     if (char in chars && chars[char].length > 0) {
-      const randomChar =
-        chars[char][
-          Math.floor(Math.random() * chars[char].length)
-        ]
+      const randomChar = getRandom(chars[char]) // chars[char][0]
       product += randomChar
     } else {
       product += char
