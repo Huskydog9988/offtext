@@ -1,8 +1,9 @@
 {
   "name": "offtext",
   "version": "0.3.5",
-  "description": "Convert your ASCII into weird Unicode strings",
+  "description": "Perform weird actions on your strings",
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "bin": {
     "offtext": "dist/src/cli.js"
   },
@@ -53,7 +54,7 @@
     "hooks": {
       "pre-commit": "npm run lint",
       "pre-push": "npm run lint",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "DISABLE-prepare-commit-msg": "exec < /dev/tty && git cz changelog --hook || true"
     }
   },
   "nyc": {
