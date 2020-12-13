@@ -3,7 +3,7 @@ import { expect } from 'chai'
 import 'mocha'
 
 describe('getPackageVersion', () => {
-  it('should be a string', async () => {
+  it('should return a string', async () => {
     const result = await getPackageVersion()
     expect(result).to.be.a('string')
   })

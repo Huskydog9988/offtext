@@ -1,4 +1,5 @@
-// In the future this could be done by adding diacritics to the chars
+// Each array contains various chars that are variants
+// of the ASCII variable name
 
 export const a = [
   'ǟ',

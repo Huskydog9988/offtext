@@ -1,3 +1,5 @@
-export { default as genBizarre } from './utils/genBizarre'
+export { default as genCracked } from './utils/genCracked'
+export { default as genRandomCase } from './utils/genRandomCase'
+export { default as genReverse } from './utils/genReverse'
 export { default as isASCII } from './utils/isASCII'
 export { default as chars } from './utils/chars'
