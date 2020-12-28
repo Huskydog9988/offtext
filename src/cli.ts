@@ -4,6 +4,7 @@ import { Command } from 'commander'
 
 import genCracked from './utils/genCracked'
 import genRandomCase from './utils/genRandomCase'
+import genReverse from './utils/genReverse'
 import isASCII from './utils/isASCII'
 import getPackageVersion from './utils/getPackageVersion'
 
@@ -17,21 +18,7 @@ import getPackageVersion from './utils/getPackageVersion'
     .option('-d, --debug', 'extra output for debugging')
 
   program
-    .command('cracked <text...>', { isDefault: true })
-    .aliases(['c'])
-    .description('Converts a string into "cracked" text')
-    .action((textArray: string[]) => {
-      const text = textArray.join(' ')
-
-      if (!isASCII(text)) {
-        console.error("Text isn't ASCII")
-        process.exit(1)
-      }
-      console.log(genCracked(text))
-    })
-
-  program
-    .command('randomcase <text...>')
+    .command('randomcase <text...>', { isDefault: true })
     .aliases(['rc'])
     .description('Randomizes the case of text in a string')
     .action((textArray: string[]) => {
@@ -45,6 +32,20 @@ import getPackageVersion from './utils/getPackageVersion'
     })
 
   program
+    .command('cracked <text...>')
+    .aliases(['c'])
+    .description('Converts a string into "cracked" text')
+    .action((textArray: string[]) => {
+      const text = textArray.join(' ')
+
+      if (!isASCII(text)) {
+        console.error("Text isn't ASCII")
+        process.exit(1)
+      }
+      console.log(genCracked(text))
+    })
+
+  program
     .command('reverse <text...>')
     .aliases(['rc'])
     .description('Reverses the text of a string')
@@ -55,7 +56,7 @@ import getPackageVersion from './utils/getPackageVersion'
         console.error("Text isn't ASCII")
         process.exit(1)
       }
-      console.log(genRandomCase(text))
+      console.log(genReverse(text))
     })
 
   program.parse(process.argv)

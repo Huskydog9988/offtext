@@ -11,32 +11,10 @@
 
 Offtext converts your traditional text into incongruous text, straight out of a seizure.
 
-## 🏃‍♀️ Usage
+## 🏃‍♀️ Quick Usage
 
 ```bash
-npx offtext gen <your text here>
-```
-
-## 📒 Examples
-
-Bash
-
-```bash
-npx offtext gen the generated text changes every time!
-# Output: ₮𝔥𝑒 𝙜𝔼𝓷ꏂꋪ𝘢𝕥𝖊ԃ tꏂⓧㄒ ꀯ𝖍𝕒𝓃ＧΣs̶͙̗̮̖̋̂̎̚ ɛ꒦Eⓡყ Ƭ꒐𝙢𝑒!
-
-npx offtext gen this text is super broken looking..
-# Output: ₮ꍩ꒐ʂ 𝓽𝑒ｘ꓄ ꂑ𝔰 ֆʊק𝔼г ɮｒ𝐨𝓴𝔼ꋊ ᒪ𝕠𝔬𝘬IŇ𝙜..
-```
-
-JS
-
-```js
-const offtext = require('offtext')
-
-const text = 'some random text'
-console.log(offtext.genBizarre(text))
-// Outputs: §𝑜𝓂𝑒 ɾΛⓝ𝔡𝓸𝙢 TΣ𝔁ｔ
+npx offtext randomcase <your text here>
 ```
 
 ## 📥 Install and Run
@@ -48,6 +26,41 @@ npm install -g offtext
 offtext gen <your text here>
 ```
 
+## 📒 Examples
+
+Bash
+
+```bash
+offtext randomcase "The Text's CASE is random"
+# Output: tHE TEXT'S CaSE Is RandOm
+
+offtext cracked this text is super broken looking..
+# Output: ₮ꍩ꒐ʂ 𝓽𝑒ｘ꓄ ꂑ𝔰 ֆʊק𝔼г ɮｒ𝐨𝓴𝔼ꋊ ᒪ𝕠𝔬𝘬IŇ𝙜..
+
+offtext reverse it has been reversed
+# Output: desrever neeb sah ti
+```
+
+JS
+
+```js
+// CommonJS
+const offtext = require('offtext')
+// ES6
+import * as offtext from 'offtext'
+
+const text = 'some random text'
+
+console.log(offtext.randomCase(text))
+// Outputs: soME rAndoM tExt
+
+console.log(offtext.cracked(text))
+// Outputs: §𝑜𝓂𝑒 ɾΛⓝ𝔡𝓸𝙢 TΣ𝔁ｔ
+
+console.log(offtext.reverse(text))
+// Outputs: txet modnar emos
+```
+
 ## 📝 Notes
 
-- The generate command is the default command meaning it can be used like: `offtext <your text here>`
+- The randomcase command is the default command, meaning it can be used like: `offtext <your text here>`
