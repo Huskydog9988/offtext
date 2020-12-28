@@ -1,6 +1,6 @@
 {
   "name": "offtext",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Perform weird actions on your strings",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
